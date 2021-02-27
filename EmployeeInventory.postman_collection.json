@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "0663d205-1c4b-4272-a8b9-9d7fca67ea19",
+		"name": "EmployeeInventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST - upload emp data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "employeeData",
+							"type": "file",
+							"src": "/C:/Users/niharranjan.b/Desktop/vmwareAssignment/emp1.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/employee?action=upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"employee"
+					],
+					"query": [
+						{
+							"key": "action",
+							"value": "upload"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - check progress",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/employee/progress/a0bbe459f76e4e5c92e7d6f074fe24ba",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"employee",
+						"progress",
+						"a0bbe459f76e4e5c92e7d6f074fe24ba"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - fetch all employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8085/api/employee?page=0&size=50&sort=name",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"employee"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "50"
+						},
+						{
+							"key": "sort",
+							"value": "name"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - update emp",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"693e273d-dcba-444b-9728-dd35b1953e42\",\r\n    \"name\": \"Alex1\",\r\n    \"age\": \"90\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL - Employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"693e273d-dcba-444b-9728-dd35b1953e42\",\r\n    \"name\": \"Alex1\",\r\n    \"age\": \"90\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/employee/6ad1b221-2b25-4de1-8656-69410aca2508",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"employee",
+						"6ad1b221-2b25-4de1-8656-69410aca2508"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEL = All",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"693e273d-dcba-444b-9728-dd35b1953e42\",\r\n    \"name\": \"Alex1\",\r\n    \"age\": \"90\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8085/api/employee/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8085",
+					"path": [
+						"api",
+						"employee",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
