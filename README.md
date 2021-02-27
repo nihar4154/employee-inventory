@@ -40,4 +40,4 @@ Based on the above diagram,
 
 <b> (POSTMAN COLLECTION and Sample Data file in root directory) </b>
 
-<a href="EmployeeInventory.postman_collection.json" download="FileName">Download Postman Collection</a>
+<a href="EmployeeInventory.postman_collection.json" download="EmployeeInventory.postman_collection.json">Download Postman Collection</a>
