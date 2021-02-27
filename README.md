@@ -24,7 +24,7 @@ Based on the above diagram,
    Upload API will accept a csv file contains employee data and return 202-Created response with generated taskId.
    Asynchronously, the async-file-processor will read the file and insert into the h2 database.
 
-<  b> (Implemented Bulk Insertion in batch to redure db hit and to gain performance some logic to reduce hibernate cache size) </b>
+ <b> (Implemented Bulk Insertion in batch to redure db hit and to gain performance some logic to reduce hibernate cache size) </b>
 
 2. GET http://localhost:8085/api/employee/progress/f359d9a059e74464909ee99a50fc7e3a
 
