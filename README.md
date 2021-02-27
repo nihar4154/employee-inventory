@@ -38,5 +38,6 @@ Based on the above diagram,
 5. DEL http://localhost:8085/api/employee/6ad1b221-2b25-4de1-8656-69410aca2508
 6. DEL http://localhost:8085/api/employee/all
 
-<b> (FIND POSTMAN COLLECTION and sample data file in root directory) </b>
-<a href="EmployeeInventory.postman_collection.json" download>Download Postman Collection</a>
+<b> (POSTMAN COLLECTION and Sample Data file in root directory) </b>
+
+<a href="EmployeeInventory.postman_collection.json" download="FileName">Download Postman Collection</a>
